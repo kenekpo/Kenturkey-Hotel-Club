@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color:#c4d9eb;
+  text-shadow: 2px 2px rgb(92, 102, 241);
+  font-family:"Lucida Handwriting", cursive;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.about, .contact {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Home Page Style */
+.hero {
+  background: url('images/hotel-img-1.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.button {
+  display: inline-block;
+  background: #ff6f61;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 100px;
+  margin-left: 55px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background: #f4f4f4;
+  text-align: center;
+  flex-wrap: wrap; 
+}
+
+.feature-item {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px; 
+}
+
+.feature-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.feature-item h3 {
+  margin: 15px 0;
+}
+
+.testimonials {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.testimonial-item {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.testimonial-item p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .features {
+    flex-direction: column; /* Stack feature items vertically */
+  }
+
+  .feature-item {
+    margin: 20px 0; /* Add more spacing between stacked items */
+  }
+
+  .testimonial-item {
+    padding: 15px;
+    margin: 15px 10px; /* Adjust margins for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem; /* Smaller header text for very small screens */
+  }
+
+  nav ul li {
+    display: block; /* Stack navigation links vertically */
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 60px 20px; /* Reduce padding for smaller screens */
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    padding: 8px 16px; /* Smaller button for mobile */
+  }
+}
+
+/* About Page Styles */
+.about-intro {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about-intro img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.about-values {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background: #f4f4f4;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.about-values .value-item {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+}
+
+.about-values .value-item h3 {
+  margin: 15px 0;
+}
+
+.about-team {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about-team .team-member {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+.about-team .team-member img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.about-team .team-member h3 {
+  margin: 10px 0 5px;
+}
+
+.about-team .team-member p {
+  margin: 0;
+  font-style: italic;
+  color: #555;
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 768px) {
+  .about-values {
+    flex-direction: column;
+  }
+
+  .about-values .value-item {
+    margin: 20px 0;
+  }
+
+  .about-team .team-member {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-intro h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-values h2,
+  .about-team h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-team .team-member {
+    margin: 10px 0;
+  }
+}
+
+/* Contact Page Styles */
+.contact form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.contact input, .contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
