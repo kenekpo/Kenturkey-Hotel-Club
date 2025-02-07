@@ -64,14 +64,14 @@ nav ul li a {
   padding: 10px 20px;
   text-decoration: none;
   margin-top: 200px;
-  margin-left: 70px;
+  /* margin-left: 70px; */
 }
 
 .features {
   display: flex;
   justify-content: space-around;
   padding: 40px 20px;
-  background: #f4f4f4;
+  background: #c0bebe;
   text-align: center;
   flex-wrap: wrap; 
 }
@@ -93,12 +93,12 @@ nav ul li a {
 
 .testimonials {
   padding: 40px 20px;
-  background: #fff;
+  background: #e9dede;
   text-align: center;
 }
 
 .testimonial-item {
-  background: #f4f4f4;
+  background: #c0bebe;
   padding: 20px;
   margin: 20px auto;
   max-width: 600px;
@@ -151,7 +151,7 @@ nav ul li a {
     font-size: 1.8rem;
   }
 
-  .btn {
+  .button {
     padding: 8px 16px; /* Smaller button for mobile */
   }
 }
@@ -160,6 +160,7 @@ nav ul li a {
 .about-intro {
   text-align: center;
   padding: 40px 20px;
+  background: #e9dede;
 }
 
 .about-intro img {
@@ -190,6 +191,7 @@ nav ul li a {
 .about-team {
   text-align: center;
   padding: 40px 20px;
+  background: #e9dede;
 }
 
 .about-team .team-member {
@@ -256,7 +258,7 @@ nav ul li a {
 }
 
 .contact input, .contact textarea {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -276,5 +278,4 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  margin-top: 20px;
 }
