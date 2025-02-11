@@ -1,4 +1,14 @@
 /* General Styles */
+*{   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -66,14 +76,21 @@ nav ul li a {
   margin-top: 200px;
   /* margin-left: 70px; */
 }
+aside{
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 .features {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   padding: 40px 20px;
   background: #c0bebe;
   text-align: center;
   flex-wrap: wrap; 
+  border: 1px solid rgb(134, 103, 103);
 }
 
 .feature-item {
@@ -112,7 +129,7 @@ nav ul li a {
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 2rem; /* Smaller font size for smaller screens */
+    font-size: 2rem; 
   }
 
   .hero p {
@@ -120,31 +137,31 @@ nav ul li a {
   }
 
   .features {
-    flex-direction: column; /* Stack feature items vertically */
+    flex-direction: column; 
   }
 
   .feature-item {
-    margin: 20px 0; /* Add more spacing between stacked items */
+    margin: 20px 0; 
   }
 
   .testimonial-item {
     padding: 15px;
-    margin: 15px 10px; /* Adjust margins for smaller screens */
+    margin: 15px 10px; 
   }
 }
 
 @media (max-width: 480px) {
   header h1 {
-    font-size: 1.5rem; /* Smaller header text for very small screens */
+    font-size: 1.5rem; 
   }
 
   nav ul li {
-    display: block; /* Stack navigation links vertically */
+    display: block; 
     margin: 10px 0;
   }
 
   .hero {
-    padding: 60px 20px; /* Reduce padding for smaller screens */
+    padding: 60px 20px;
   }
 
   .hero h2 {
@@ -152,7 +169,7 @@ nav ul li a {
   }
 
   .button {
-    padding: 8px 16px; /* Smaller button for mobile */
+    padding: 8px 16px;
   }
 }
 
@@ -246,6 +263,14 @@ nav ul li a {
 }
 
 /* Contact Page Styles */
+.contact-body{
+  display:flex;
+  flex-direction: column;
+  height:100vh
+}
+.contact{
+  flex:1 1 0%
+}
 .contact form {
   max-width: 400px;
   margin: 0 auto;
@@ -262,6 +287,10 @@ nav ul li a {
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
+}
+fieldset{
+  border: 1px solid rgb(133, 129, 129);
+  padding: 8px;
 }
 
 .contact button {
