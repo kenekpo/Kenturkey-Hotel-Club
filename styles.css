@@ -69,12 +69,11 @@ nav ul li a {
 
 .button {
   display: inline-block;
-  background: #ff6f61;
+  background: #f7a6a0;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   margin-top: 200px;
-  /* margin-left: 70px; */
 }
 aside{
   font-size: 2.5rem;
