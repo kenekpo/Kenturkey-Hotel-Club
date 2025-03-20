@@ -1,0 +1,96 @@
+/* About Page Styles */
+.about-intro {
+    text-align: center;
+    padding: 40px 20px;
+    background: #e9dede;
+  }
+  .about-intro h2{
+    margin: 40px auto;
+    font-size: x-large;
+  }
+  .about-intro img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .about-values {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background: #f4f4f4;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .about-values h2 {
+    font-size: large;
+    padding-right: 10px;
+  }
+  
+  .about-values .value-item {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+  }
+  
+  .about-values .value-item h3 {
+    margin: 15px 0;
+  }
+  
+  .about-team {
+    text-align: center;
+    padding: 40px 20px;
+    background: #e9dede;
+  }
+  
+  .about-team .team-member {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .about-team .team-member img {
+    border-radius: 50%;
+    max-width: 100%;
+  }
+  
+  .about-team .team-member h3 {
+    margin: 10px 0 5px;
+  }
+  
+  .about-team .team-member p {
+    margin: 0;
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Responsive Design for About Page */
+  @media (max-width: 768px) {
+    .about-values {
+      flex-direction: column;
+    }
+  
+    .about-values .value-item {
+      margin: 20px 0;
+    }
+  
+    .about-team .team-member {
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-intro h2 {
+      font-size: 1.8rem;
+    }
+  
+    .about-values h2,
+    .about-team h2 {
+      font-size: 1.5rem;
+    }
+  
+    .about-team .team-member {
+      margin: 10px 0;
+    }
+  }
+  

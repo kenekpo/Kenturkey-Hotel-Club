@@ -1,0 +1,123 @@
+  /* Home Page Style */
+  .container {
+    background: url('images/hotel-img-1.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .container h2 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .container p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .button {
+    display: inline-block;
+    background: #fa827b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 200px;
+    /* margin-left: 70px; */
+  }
+  aside{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .features {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background: #c0bebe;
+    text-align: center;
+    flex-wrap: wrap; 
+    border: 1px solid rgb(134, 103, 103);
+  }
+  
+  .feature-item {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px; 
+  }
+  
+  .feature-item img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .feature-item h3 {
+    margin: 15px 0;
+  }
+  
+  .testimonials {
+    padding: 40px 20px;
+    background: #e9dede;
+    text-align: center;
+  }
+  
+  .testimonial-item {
+    background: #c0bebe;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  .testimonial-item p {
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container h2 {
+      font-size: 2rem; 
+    }
+  
+    .container p {
+      font-size: 1rem;
+    }
+  
+    .features {
+      flex-direction: column; 
+    }
+  
+    .feature-item {
+      margin: 20px 0; 
+    }
+  
+    .testimonial-item {
+      padding: 15px;
+      margin: 15px 10px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5rem; 
+    }
+  
+    nav ul li {
+      display: block; 
+      margin: 10px 0;
+    }
+  
+    .container {
+      padding: 60px 20px;
+    }
+  
+    .container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .button {
+      padding: 8px 16px;
+    }
+  }

@@ -1,11 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - Kenturkey Hotels & Club</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="faq.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <img src="logo.png" alt="Logo" width="150" height="150" style="border-radius: 300px;"/>
+      
+      <div class="header-container">
+   
+      <!-- Navigation Links -->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="testimonial.html">Testimonial & Reviews</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+    <div class="faq-container">
+      <h1>Frequently Asked Questions</h1>
+
+      <!-- FAQ Items -->
+      <div class="faq-item">
+        <div class="faq-question">What time is check-in and check-out?</div>
+        <div class="faq-answer">
+          Check-in time is at 3:00 PM, and check-out time is at 11:00 AM. Early
+          check-in and late check-out may be available upon request, subject to
+          availability.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you offer airport transfers?</div>
+        <div class="faq-answer">
+          Yes, we provide airport transfer services for an additional fee.
+          Please contact our concierge team to arrange this service after
+          booking.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Is breakfast included in my stay?</div>
+        <div class="faq-answer">
+          Breakfast is included in select packages. You can add breakfast to
+          your reservation during the booking process or at the front desk.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Can I modify or cancel my reservation?</div>
+        <div class="faq-answer">
+          Yes, modifications and cancellations are free up to 48 hours before
+          your check-in date. Please contact us or manage your booking online.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you have parking facilities?</div>
+        <div class="faq-answer">
+          Yes, we offer complimentary parking for all guests. Valet parking is
+          also available for an additional fee.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Are pets allowed at the hotel?</div>
+        <div class="faq-answer">
+          We are a pet-friendly hotel! Pets are welcome for an additional fee.
+          Please inform us in advance so we can prepare for your furry friend.
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <!-- Hotel Logo and Name -->
+        <div class="footer-section">
+          <div class="footer-logo">
+          <img src="logo.png" alt="Logo" width="150" height="150" style="border-radius: 300px;"/>
+          </div>
+          <p>Kenturkey Hotels & Club</p>
+        </div>
+        <!-- General Links -->
+        <div class="footer-section">
+          <h4>General</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="testimonial.html">Testimonial & Reviews</a></li>
+          </ul>
+        </div>
+
+        <!-- Policies & Legal Links -->
+        <div class="footer-section">
+          <h4>Policies</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#">Accessibility</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="footer-social">
+            <img src="facebook.svg" alt="Facebook" />
+            <img src="twitter.svg" alt="Twitter" />
+            <img src="instagram.svg" alt="Instagram" />
+            <img src="email.svg" alt="Email" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        &copy; 2025 Kenturkey Hotels & Club. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script>
+      const faqQuestions = document.querySelectorAll(".faq-question");
+
+      faqQuestions.forEach((question) => {
+        question.addEventListener("click", () => {
+          const answer = question.nextElementSibling;
+          question.classList.toggle("active");
+          answer.classList.toggle("open");
+        });
+      });
+    </script>
+  </body>
 </html>

@@ -1,45 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Kenturkey Hotels & Club</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body class="contact-body">
-    <header>
-      <h1>Contact Kenturkey Hotels & Club</h1>
-      <nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Kenturkey Hotels & Club</title>
+  
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <header>
+    <!-- Logo -->
+    <img src="logo.png" alt="Logo" width="150" height="150" style="border-radius: 300px;"/>
+    
+    <div class="header-container">
+ 
+    <!-- Navigation Links -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="testimonial.html">Testimonial & Reviews</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="/submit-form" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Map -->
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345093747!2d144.9537353153166!3d-37.816279742021665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d2a6c8f4f4b4!2sYour%20Hotel%20Name!5e0!3m2!1sen!2sus!4v1633023226787!5m2!1sen!2sus"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <!-- Hotel Logo and Name -->
+      <div class="footer-section">
+        <div class="footer-logo">
+        <img src="logo.png" alt="Logo" width="150" height="150" style="border-radius: 300px;"/>
+        </div>
+        <p>Kenturkey Hotels & Club</p>
+      </div>
+        <!-- General Links -->
+      <div class="footer-section">
+        <h4>General</h4>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="testimonial.html">Testimonial & Reviews</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
 
-    <section class="contact">
-      <h2>Get in Touch</h2>
-      <p>Have questions or want to make a reservation? Reach out to us!</p>
-      <form>
-        <fieldset>
-        <legend>Contact Form</legend>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+      <!-- Policies & Legal Links -->
+      <div class="footer-section">
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Cancellation Policy</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+      <!-- Social Media Links -->
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="footer-social">
+          <img src="facebook.svg" alt="Facebook" />
+          <img src="twitter.svg" alt="Twitter" />
+          <img src="instagram.svg" alt="Instagram" />
+          <img src="email.svg" alt="Email" />
+        </div>
+      </div>
+    </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Send</button>
-        </fieldset>
-      </form>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Kenturkey Hotels & Club. All rights reserved.</p>
-    </footer>
-  </body>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      &copy; 2025 Kenturkey Hotels & Club. All Rights Reserved.
+    </div>
+  </footer>
+</body>
 </html>
