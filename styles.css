@@ -10,7 +10,10 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+a{
+  text-decoration: none;
+  color: inherit;
+}
 li {
   list-style-type: none;
 }
@@ -109,11 +112,6 @@ nav ul li a:hover {
     align-items: center;
   }
 }
-/* .about, .contact {
-    padding: 20px;
-    text-align: center;
-  } */
-
 
   /* FOOTER STYLES */
 footer {
@@ -164,7 +162,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-  color: #ffc107;
+  color: #22211c;
 }
 
 .footer-logo {
